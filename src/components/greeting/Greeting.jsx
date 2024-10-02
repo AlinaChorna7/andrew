@@ -22,11 +22,11 @@ const Greeting = () => {
 
       <div className={styles.optionsContainer}>
         <div className={styles.option} onClick={() => navigate('/todo-list')}>
-          <img src="../../images/5467384727066502553.png" alt="Список справ" className={styles.optionImage} />
+          <img src="./images/5467384727066502553.png" alt="Список справ" className={styles.optionImage} />
           <p>Клік тут</p>
         </div>
         <div className={styles.option} onClick={() => navigate('/chat-bot')}>
-          <img src="../../../public/images/raz (2).jpg" alt="Чат-бот" className={styles.optionImage} />
+          <img src="./images/raz (2).jpg" alt="Чат-бот" className={styles.optionImage} />
           <p>Клік тут</p>
         </div>
       </div>
