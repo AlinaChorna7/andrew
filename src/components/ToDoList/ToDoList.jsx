@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './TodoList.module.css'; // Імпортуйте стилі
+import styles from './ToDoList.module.css'; // Імпортуйте стилі
 
 const TodoList = () => {
   const navigate = useNavigate();
