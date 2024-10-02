@@ -1,0 +1,46 @@
+/* TodoList.module.css */
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрує по горизонталі */
+    justify-content: center; /* Центрує по вертикалі */
+    height: 100vh; /* Висота на всю видиму область */
+    text-align: center; /* Текст по центру */
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px; /* Відстань між заголовком і списком */
+  }
+  
+  .taskList {
+    list-style: none; /* Прибрати маркери */
+    padding: 0; /* Прибрати внутрішні відступи */
+  }
+  
+  .taskItem {
+    margin: 10px 0; /* Відстань між елементами списку */
+    font-size: 18px; /* Розмір шрифту для задач */
+  }
+  
+  .done {
+    text-decoration: line-through; /* Перекреслюємо текст, якщо задача виконана */
+    color: gray; /* Змінюємо колір тексту на сірий */
+  }
+  
+  .backButton {
+    margin-top: 20px; /* Відстань між списком і кнопкою */
+    padding: 10px 20px; /* Внутрішні відступи кнопки */
+    font-size: 16px; /* Розмір шрифту для кнопки */
+    cursor: pointer; /* Курсор при наведенні */
+    background-color: #007bff; /* Колір фону кнопки */
+    color: white; /* Колір тексту кнопки */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Заокруглені кути */
+    transition: background-color 0.3s; /* Плавний перехід кольору фону */
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3; /* Колір кнопки при наведенні */
+  }

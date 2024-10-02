@@ -1,0 +1,34 @@
+/* Greeting.module.css */
+.greetingContainer {
+    display: flex;
+    flex-direction: column; /* Вертикальне вирівнювання */
+    align-items: center; /* Центрування по горизонталі */
+    justify-content: center; /* Центрування по вертикалі */
+    /* height: 100vh;  */
+    text-align: center; /* Центрування тексту */
+    padding: 20px; /* Внутрішній відступ */
+  }
+  
+  .greetingText {
+    font-size: 20px; /* Розмір шрифту заголовка */
+    margin-bottom: 30px; /* Відступ між заголовком та зображеннями */
+  }
+  
+  .optionsContainer {
+    display: flex; /* Використання flex для вирівнювання опцій */
+    justify-content: center; /* Центрування опцій по горизонталі */
+    gap: 100px; /* Відступ між опціями */
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column; /* Вертикальне вирівнювання зображення і тексту */
+    align-items: center; /* Центрування по горизонталі */
+    cursor: pointer; /* Курсор у вигляді руки при наведенні */
+  }
+  
+  .optionImage {
+    max-width:300px; /* Максимальна ширина зображення */
+    height: auto; /* Автоматичне регулювання висоти */
+    border-radius: 8px; /* Закруглення кутів зображення */
+  }
