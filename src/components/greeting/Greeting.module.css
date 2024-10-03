@@ -1,34 +1,64 @@
-/* Greeting.module.css */
 .greetingContainer {
-    display: flex;
-    flex-direction: column; /* Вертикальне вирівнювання */
-    align-items: center; /* Центрування по горизонталі */
-    justify-content: center; /* Центрування по вертикалі */
-    /* height: 100vh;  */
-    text-align: center; /* Центрування тексту */
-    padding: 20px; /* Внутрішній відступ */
-  }
-  
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання */
+  align-items: center; /* Центрування по горизонталі */
+  justify-content: center; /* Центрування по вертикалі */
+  text-align: center; /* Центрування тексту */
+  padding: 20px; /* Внутрішній відступ */
+}
+
+/* Стиль заголовка */
+.greetingText {
+  font-size: 20px; /* Розмір шрифту заголовка */
+  margin-bottom: 30px; /* Відступ між заголовком та зображеннями */
+}
+
+/* Контейнер для опцій */
+.optionsContainer {
+  display: flex; /* Використання flex для вирівнювання опцій */
+  justify-content: center; /* Центрування опцій по горизонталі */
+  gap: 100px; /* Відступ між опціями */
+}
+
+/* Окрема опція */
+.option {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання зображення і тексту */
+  align-items: center; /* Центрування по горизонталі */
+  cursor: pointer; /* Курсор у вигляді руки при наведенні */
+}
+
+/* Зображення для опції */
+.optionImage {
+  max-width: 300px; /* Максимальна ширина зображення */
+  height: auto; /* Автоматичне регулювання висоти */
+  border-radius: 8px; /* Закруглення кутів зображення */
+}
+
+/* Адаптивні стилі для телефонів */
+@media (max-width: 768px) {
   .greetingText {
-    font-size: 20px; /* Розмір шрифту заголовка */
-    margin-bottom: 30px; /* Відступ між заголовком та зображеннями */
+    font-size: 18px; /* Зменшення розміру шрифту заголовка */
+    margin-bottom: 20px; /* Зменшення відступу між заголовком та зображеннями */
   }
-  
+
   .optionsContainer {
-    display: flex; /* Використання flex для вирівнювання опцій */
-    justify-content: center; /* Центрування опцій по горизонталі */
-    gap: 100px; /* Відступ між опціями */
+    flex-direction: column; /* Вертикальне вирівнювання опцій */
+    gap: 20px; /* Зменшення відстані між опціями */
   }
-  
-  .option {
-    display: flex;
-    flex-direction: column; /* Вертикальне вирівнювання зображення і тексту */
-    align-items: center; /* Центрування по горизонталі */
-    cursor: pointer; /* Курсор у вигляді руки при наведенні */
-  }
-  
+
   .optionImage {
-    max-width:300px; /* Максимальна ширина зображення */
-    height: auto; /* Автоматичне регулювання висоти */
-    border-radius: 8px; /* Закруглення кутів зображення */
+    max-width: 200px; /* Зменшення розміру зображення */
   }
+}
+
+/* Додаткові стилі для дуже малих екранів */
+@media (max-width: 480px) {
+  .greetingText {
+    font-size: 16px; /* Ще більше зменшення розміру шрифту */
+  }
+
+  .optionImage {
+    max-width: 150px; /* Зменшення розміру зображення */
+  }
+}
